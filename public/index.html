@@ -12,12 +12,16 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 </head>
 <body>
 <div id="app"></div>
 <div id="PhotoService" style='margin:0 -8px'></div>
 <div id="reviews"></div>
-<span id='reservation'></span>
+<div id="reservationParent">
+  <div id='reservation'></div>
+</div>
 <div id="recommendations"></div>
 <script type="text/javascript" src="http://ec2-18-231-77-64.sa-east-1.compute.amazonaws.com:3001/bundle.js"></script>
 <script type="text/javascript" src="http://ec2-54-183-138-229.us-west-1.compute.amazonaws.com:3002/bundle.js"></script>

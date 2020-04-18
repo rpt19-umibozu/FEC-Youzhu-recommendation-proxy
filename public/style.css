@@ -12,7 +12,7 @@ body {
 #reviews {
   display: inline-block;
   margin: 2px 6px 2px 190px;
-  width: 1000px;
+  width: 1005px;
   border: 30px;
   position: relative !important;
   overflow: hidden;
@@ -21,16 +21,18 @@ body {
   text-overflow: ellipsis;
 }
 
+#reservationParent {
+  position: absolute;
+  top: 625px;
+  right: 200px;
+  height: 136.75%;
+}
+
 #reservation {
-  display: inline-block;
-  margin: 2px 6px 2px 6px;
-  width: 300px;
-  border: 5px;
-  position: relative !important;
-  overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  text-overflow: ellipsis;
+  position: sticky;
+  top: 0;
+  left: 0;
+
 }
 
 #recommendations {
