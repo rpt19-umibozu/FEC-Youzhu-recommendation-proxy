@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+const path = require('path');
 
 var app = express();
 
@@ -10,6 +11,11 @@ app.use(function(req, res, next) {
   next();
 });
 
+
+app.get('/:id', (req, res) => {
+  console.log('send file');
+  res.sendFile(path.join(__dirname, '../public', '/index.html'));
+});
 
 app.listen(3000, function() {
   console.log('listening on port 3000!');
